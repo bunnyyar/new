@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-                'https://github.com/bunnyyar/new.git'
+               git credentialsId: '6a466836-8697-41a3-b2ae-06c69062b2bf', url: 'https://github.com/bunnyyar/new'
             }
         }
         stage('build') {
